@@ -1,7 +1,148 @@
+@import "reset";
+@import "fonts";
 @import 'variable';
-body{
-  color: black;
-  padding: 22px;
-  border-radius: 255px;
+
+.container-medium {
+  max-width: 946px;
+  margin: 0 auto;
 }
+
+.contact {
+  padding-top: clamp(90px, 90px, 60px);
+  padding-bottom: clamp(90px, 90px, 60px);
+
+  &__title {
+    font-size: $fs42;
+    font-family: $futuraBold;
+    color: $darkBlue;
+    text-align: center;
+    padding-bottom: clamp(70px, 70px, 60px);
+  }
+
+  .container-medium {
+    display: flex;
+    justify-content: space-between;
+
+    .chef {
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__name {
+        text-align: center;
+        color: $darkBlue;
+        font-size: $fs24;
+        padding: 0 22px;
+        font-family: $futuraBold;
+
+      }
+
+      &__position {
+        color: $darkBlue;
+        text-align: center;
+        font-size: $fs24;
+        font-family: $futuraMedium;
+      }
+
+      &__about {
+        padding-top: 5px;
+        font-family: $futuraMedium;
+        font-size: $fs20;
+        text-align: center;
+      }
+    }
+
+    .wpcf7-form {
+      max-width: 360px;
+
+      p {
+        width: 100%;
+
+        span {
+          &.wpcf7-not-valid-tip {
+            display: none;
+          }
+
+          width: 100%;
+          display: block;
+
+          input[type="text"],
+          input[type="tel"],
+          input[type="email"] {
+
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 100%;
+            padding: 18px 25px;
+            border: 1px solid #ebebeb;
+            font-size: 20px;
+            font-family: $futuraRegular;
+            outline: none;
+
+            &.wpcf7-not-valid {
+              border: 1px solid red;
+            }
+          }
+
+          .wpcf7-checkbox {
+            margin-bottom: 8px;
+            border-radius: 4px;
+            padding: 5px 2px;
+
+            .wpcf7-list-item {
+              margin: 0;
+            }
+
+            label {
+              display: flex;
+
+              input {
+                margin-right: 13px;
+                margin-top: 8px;
+              }
+
+              span {
+                font-family: $futuraRegular;
+                color: $gray;
+                font-size: 20px;
+                margin-top: 4px;
+                line-height: 19px;
+              }
+            }
+
+            &.wpcf7-not-valid {
+              border: 1px solid red;
+
+            }
+          }
+        }
+
+        input[ type="submit"] {
+          color: white;
+          background: $orange;
+          border-radius: 4px;
+          outline: none;
+          font-family: $futuraRegular;
+          border: none;
+          font-size: $fs20;
+          width: 100%;
+          padding: 18px 25px;
+        }
+      }
+
+      .wpcf7-response-output {
+        border-radius: 4px;
+        padding: 0.2em 1em;
+        font-family: $futuraRegular;
+        margin: 0;
+        border: 1px solid #eb7233;
+      }
+    }
+  }
+}
+
+
+@import 'responce';
+
 
