@@ -262,6 +262,7 @@ header {
     padding-bottom: clamp(90px, 90px, 60px);
     margin-top: -75px;
     position: relative;
+    z-index: -1;
     .title {
       color: $white;
       text-align: center;
@@ -588,6 +589,36 @@ header {
   }
 }
 
+footer {
+  background: $bgBlue;
+  padding: 30px 15px;
+  .container-main {
+    display: flex;
+    .footer__contact {
+      margin-right: 10vw;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      .footer-title {
+        font-size: $fs24;
+        font-family: $futuraBold;
+        margin-bottom: 15px;
+        color: $white;
+      }
+      .footer-text, a {
+        font-family: $futuraRegular;
+        font-size: $fs20;
+        color: $white;
+        margin-bottom: 5px;
+      }
+
+      a {
+        display: block;
+      }
+
+    }
+  }
+}
 
 @import 'responce';
 
