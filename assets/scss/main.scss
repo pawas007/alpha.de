@@ -261,6 +261,7 @@ header {
     padding-top: clamp(90px, 90px, 60px);
     padding-bottom: clamp(90px, 90px, 60px);
     margin-top: -75px;
+    position: relative;
     .title {
       color: $white;
       text-align: center;
@@ -271,6 +272,18 @@ header {
       margin: 0 auto;
       text-align: center;
       color: $white;
+    }
+    .problem-bg {
+      position: absolute;
+      bottom: 55px;
+      left: 19vw;
+      max-width: 367px;
+      width: 100%;
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
   .proposition {
