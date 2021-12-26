@@ -8,8 +8,9 @@
 }
 
 .container-main {
-  max-width: 1160px;
+  max-width: 1190px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 //fonts
@@ -159,7 +160,7 @@ header {
   padding-top: clamp(90px, 90px, 60px);
   padding-bottom: clamp(90px, 90px, 60px);
   .container-main {
-    max-width: 1180px;
+    max-width: 1210px;
     .title {
       color: $darkBlue;
       text-align: center;
@@ -209,7 +210,7 @@ header {
 .problem {
   position: relative;
   .container-main {
-    max-width: 1180px;
+    max-width: 1210px;
     .title {
       text-align: center;
       color: $darkBlue;
@@ -325,7 +326,7 @@ header {
           margin-bottom: 0;
         }
         &:nth-child(even) {
-          margin-left: 60px;
+          margin-left: 150px;
         }
         .img-wrapper {
           max-width: 208px;
@@ -336,6 +337,103 @@ header {
             object-fit: cover;
             width: 100%;
           }
+        }
+        .special_desc {
+          .list-title {
+            color: $darkBlue;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.advantages {
+  padding-bottom: clamp(90px, 90px, 60px);
+  .container-main {
+    max-width: 1210px;
+    .title {
+      text-align: center;
+      color: $darkBlue;
+      margin-bottom: 65px;
+    }
+    .advantages__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .advantages__item {
+        max-width: 500px;
+        flex: 1 1 33%;
+        display: flex;
+        margin: 0 10px 55px;
+        .img-wrapper {
+          max-width: 105px;
+          width: 100%;
+          margin-right: 17px;
+          img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+          }
+        }
+        .advantages__desc {
+          .list-title {
+            color: $darkBlue;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+    .main-link {
+      font-family: $futuraRegular;
+      font-size: $fs18;
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.workers {
+  padding-top: clamp(90px, 90px, 60px);
+  padding-bottom: clamp(90px, 90px, 60px);
+  background: $bgWorkers;
+  .container-main {
+    max-width: 1210px;
+    .title {
+      text-align: center;
+      color: $darkBlue;
+      margin-bottom: 17px;
+    }
+    .subtitle {
+      max-width: 978px;
+      text-align: center;
+      margin: 0 auto 30px;
+    }
+    .workers__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      .workers__item {
+        max-width: 360px;
+        flex: 1 1 31%;
+        margin: 0 10px 20px;
+        img {
+          display: block;
+          width: 100%;
+          object-fit: cover;
+          margin-bottom: 20px;
+        }
+        .list-title {
+          color: $darkBlue;
+        }
+        .list-subtitle {
+          margin-bottom: 19px;
         }
       }
     }
